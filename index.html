@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IMPOFAI Test website</title>
+        <style>
+            body {
+                background-image: url('https://raw.githubusercontent.com/marekt88/impofai/master/Github%20images/impofai%20multiple%20bg.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            @media (max-width: 767px) {
+                body {
+                    background-image: url('https://raw.githubusercontent.com/marekt88/impofai/master/Github%20images/impofai%20multiple%20bg.png');
+                }
+            }
+            .content {
+                background-color: white;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+                max-width: 600px;
+                width: 90%;
+            }
+            h1 {
+                color: #333;
+            }
+            p {
+                color: #666;
+            }
+            a {
+                color: #007bff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .highlight {
+                font-weight: bold;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>Testovacia stránka</h1>
+            <p>Tu viete testovať chatbot predtým ako sa vloží na vašu stránku :)</p>
+            <p>Naša stránka: <a href="http://www.impofai.com">www.impofai.com</a></p>
+            <p class="highlight">Kliknite na ikonku dole vpravo -></p>
+        </div>
+
+        <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '671258fbb2c68d6518604fc4'},
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                  });
+                }
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+        </script>
+    </body>
+</html>
